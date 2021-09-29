@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <footer>
-            <p>&copy; Copyright 2021 - Matias W.</p>
+            <p style={{paddingTop:'10%'}}>&copy; Copyright 2021 - Matias W.</p>
         </footer>
     );
 }

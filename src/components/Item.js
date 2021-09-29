@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
 
-const {Body, Img, Footer, Link, Text, Title} = Card
+const {Body, Img, Footer, Text, Title} = Card
 
 const Item = (props) => {
     return ( 

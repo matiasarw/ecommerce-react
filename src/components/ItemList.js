@@ -2,7 +2,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Item from './Item'
 import React from 'react';
-var createReactClass = require('create-react-class');
 
 
 const productos = [
@@ -20,9 +19,9 @@ const ItemList = () => {
     return ( 
         <main className="pt-3">
             <Row>
-                {productos.map(name => (
+                {productos.map(prod => (
                     <Col sm={6} md={4} lg={3} className="pt-3">
-                        <Item id={name[0]} title={name[1]} price={name[2]} pictureUrl={name[3]}/>
+                        <Item id={prod[0]} title={prod[1]} price={prod[2]} pictureUrl={prod[3]}/>
                     </Col>
                 ))}
             </Row>

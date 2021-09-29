@@ -1,28 +1,20 @@
 import ItemList from './ItemList'
 import React from 'react'
-import PropTypes from 'prop-types';
 
 
-
-// const ItemListContainer = () => {
-//     return ( 
-//         <ItemList/>
-//     );
-// }
- 
 class ItemListContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            render: false //Set render state to false
+            render: false
         }
     }
     componentDidMount() {
 
         const promesa = new Promise((res,rej)=>{
             setTimeout(function() {
-                this.setState({render: true}) //After 1 second, set render to true
-                res('Carga finalizada exitosamente')
+                this.setState({render: true})
+                res('Carga de productos finalizada exitosamente')
             }.bind(this), 2000)
         })
 
@@ -33,14 +25,13 @@ class ItemListContainer extends React.Component {
 
     }
     render() {
-        let renderContainer = false //By default don't render anything
-        if(this.state.render) { //If this.state.render == true, which is set to true by the timer.
+        if(this.state.render) {
             return (
             <ItemList/>
-            ) //Add dom elements
+            )
         }
         return (
-          <p>Cargando ... </p> //Render the dom elements, or, when this.state == false, nothing.
+          <p>Cargando ... </p>
         )
     }
   }

@@ -5,7 +5,7 @@ import CartWidget from './CartWidget'
 
 
 const {Brand,Collapse,Toggle} = Navbar
-const {Item,Link, NavItem} = Nav
+const {Item,Link} = Nav
 
 const CustomNav = () => {
     return (
