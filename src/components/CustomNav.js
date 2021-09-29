@@ -15,16 +15,16 @@ const CustomNav = () => {
         <Navbar as="header" expand="md" bg="dark" variant="dark">
             <Container fluid={true}>
                 <Brand>
-                    <h1>E-Commerce</h1>
+                    <h1>MWTech</h1>
                 </Brand>
                 <Toggle/>
                 <Collapse>
                     <Nav>
                         <Item>
-                            <Link href="/">Categoria 1</Link>
+                            <Link href="/">Tienda</Link>
                         </Item>
                         <Item>
-                            <Link href="/">Categoria 2</Link>
+                            <Link href="/">Nosotros</Link>
                         </Item>
                         <Item>
                             <Link><CartWidget/></Link>
