@@ -1,0 +1,45 @@
+AJAX: Asynchronous Javascript and XML / JavaScript asincrono y XML
+
+
+XHR (XMLHttpRequest) / FETCH / AXIOS : 
+
+HTTP(Stateless Protocol)
+
+CLIENTE
+metodo - url - version
+headers
+body
+
+version: http/1.1 - la version instalada de http
+metodo/verbo: la intencion del cliente con el SERVIDOR
+(get-post-delete-put-patch)
+url: la url del recursos que queremos acceder
+
+
+
+SERVIDOR
+version - status - mensaje
+headers
+body
+
+version: http/1.1
+status: es un codigo numerico que nos indica el estado de la peticion
+mensaje: es un texto que le corresponde al status
+status: 200 , mensaje: OK
+200 - 201 - 302 - 304 -400 - 401 - 403 - 404 - 405 - 500
+
+
+APIs: son traductores de procesos
+API REST: Representation State Transfer / Interfaz de transferencia de estado.
+API SOAP: son apis mas seguras.
+
+
+---------------
+
+ENRUTAMIENTO: react-router-dom https://reactrouter.com/web/guides/quick-start
+
+ENRUTADOR:
+    BrowserRouter: API History
+    HashRouter: location.hash
+    MemoryRouter: Guarda las rutas en memoria
+    StaticRouter: SSR - Server Side Rendering
