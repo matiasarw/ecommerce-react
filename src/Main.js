@@ -1,10 +1,12 @@
-import ItemListContainer from './components/ItemListContainer'
-
+import ItemListContainer from "./components/ItemListContainer";
 
 const Main = () => {
-    return ( 
-        <ItemListContainer waitBeforeShow={500}/>
-    );
-}
- 
+  return (
+    <>
+      <ItemListContainer />
+      <br />
+    </>
+  );
+};
+
 export default Main;

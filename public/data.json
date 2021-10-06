@@ -1,0 +1,118 @@
+[
+      {
+        "id": "000001",
+        "title": "Motherboard A320M",
+        "description": "Tarjeta madre AMD AM4 uATX con iluminación LED, DDR4 3200MHz, 32Gb/s M.2, HDMI, SATA 6Gb/s, USB 3.0.",
+        "price": "5500",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/38551_1.jpeg",
+        "category": "Motherboard",
+        "stock": "4"
+      },
+      {
+        "id": "000002",
+        "title": "Cooler Hyper212",
+        "description": "Cuatro tubos de calor de contacto directo para un contacto continuo entre la CPU y el refrigerador.",
+        "price": "500",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/39111_1.jpeg",
+        "category": "Accesories",
+        "stock": "65"
+      },
+      {
+        "id": "000003",
+        "title": "Mouse Logitech",
+        "description": "Mouse para juegos de alto desempeño, tecnología RGB LIGHTSYNC y peso ajustable.",
+        "price": "800",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/34217_3.jpeg",
+        "category": "Accesories",
+        "stock": "82"
+      },
+      {
+        "id": "000004",
+        "title": "Teclado Mecanico Redragon Kumara",
+        "description": " Redragon Teclado mecánico para juegos RGB LED Rainbow retroiluminado con cable con interruptores rojos para Gaming",
+        "price": "1950",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/35357_1.jpeg",
+        "category": "Accesories",
+        "stock": "12"
+      },
+      {
+        "id": "000005",
+        "title": "Fuente Thermaltake 600W",
+        "description": "Fuente de alimentación Thermaltake TR2 TR-600 600W ATX12V v2.3 SLI Ready CrossFire Ready ATX12V v2.3 115 / 230V 20 + 4 pines",
+        "price": "5779",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/34446_4.jpeg",
+        "category": "Accesories",
+        "stock": "4"
+      },
+      {
+        "id": "000006",
+        "title": "Monitor 27 Redragon",
+        "description": "Monitor Gamer Redragon Jade 27 165Hz VA 1Ms HDMI/DP, ideal para Gaming y diseño",
+        "price": "58.999",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/monitor-gamer-144hz_40194_1.jpeg",
+        "category": "Monitor",
+        "stock": "32"
+      },
+      {
+        "id": "000007",
+        "title": "Procesador I7 11th Gen",
+        "description": "Nuevo Lanzamiento de Intel. Ideal para computadores portátiles y equipos desktop de alta gama",
+        "price": "51.829",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/39541_3.jpeg",
+        "category": "Processor",
+        "stock": "12"
+      },
+      {
+        "id": "000008",
+        "title": "Notebook Asus x515",
+        "description": "Ligeras, resistentes y de altas prestaciones. Posee I5 10th Gen, 16GB Ram, Nvidia 940mx y 1TB SSD",
+        "price": "113.500",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/39467_5.jpeg",
+        "category": "Notebook",
+        "stock": "3"
+      },
+      {
+        "id": "000009",
+        "title": "Camara Logitech",
+        "price": "4600",
+        "description": "La cámara web C920 ofrece video Full HD (1080p a 30 fps) increíblemente nítido y detallado con una lente de cristal Full HD",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/39575_1.jpeg",
+        "category": "Accesories",
+        "stock": "15"
+      },
+      {
+        "id": "000010",
+        "title": "Kingston SSD 240",
+        "description": "Sin partes móviles, las SSD también son más duraderas y más confiables que los discos duros.",
+        "price": "6200",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/37031_1.jpeg",
+        "category": "Storage",
+        "stock": "25"
+      },
+      {
+        "id": "000011",
+        "title": "Impresora Laser 5HB06A",
+        "price": "83500",
+        "description": "Ahorra dinero por su bajo consumo eléctrico. Impresora monocromática que posee una velocidad de 38pps",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/39921_1.jpeg",
+        "category": "Printer",
+        "stock": "8"
+      },
+      {
+        "id": "000012",
+        "title": "Silla Gamer Noga Stratos",
+        "description": "Stratos es una silla gamer de una ergonomía absoluta, efectiva articulación y excelente confort",
+        "price": "63200",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/40013_1.jpeg",
+        "category": "Chair",
+        "stock": "6"
+      },
+      {
+        "id": "000013",
+        "title": "Impresora Laser M404DW",
+        "price": "83500",
+        "description": "La impresora HP LaserJet M404DW le permite enfocar su tiempo donde sea más efectivo",
+        "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/36230_1.jpeg",
+        "category": "Printer"
+      }
+]
