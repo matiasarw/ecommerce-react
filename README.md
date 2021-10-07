@@ -29,7 +29,7 @@ _Luego ejecutar:_
 npm install
 ```
 
-_Luego ejecutar:_
+_Una vez instaladas las dependencias, ejecutar el script start:_
 
 ```
 npm start
