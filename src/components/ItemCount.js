@@ -30,7 +30,7 @@ const ItemCount = ({ stock }) => {
     <>
       <div>
         <h6 style={{ display: "inline-block" }}>Stock disponible: </h6>
-        <h7 style={{ display: "inline-block" }}>{products.count}</h7>
+        <h6 style={{ display: "inline-block" }}>{products.count}</h6>
         <br />
         <button
           style={{ display: "inline-block" }}
