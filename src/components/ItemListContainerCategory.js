@@ -43,7 +43,7 @@ const ItemListContainerCategory = (props) => {
 
   return (
     <>
-      <h2>Catalogo completo</h2>
+      <h2 style={{ marginTop: "10px" }}>Catalogo</h2>
       {(() => {
         if (items.length > 0) {
           return <ItemList productos={items} />;

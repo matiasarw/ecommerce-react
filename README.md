@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# MWTech
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_MWTech es un sitio de comercio electrónico, desarrollado en ReactJS, destinado a la venta de productos tecnológicos._
 
-## Available Scripts
+## Comenzando 🚀
 
-In the project directory, you can run:
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-### `npm start`
+### Pre-requisitos 📋
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+_Para poder ejecutar en un entorno local, se recomienda tener:_
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+Windows 10
+NodeJS
+```
 
-### `npm test`
+### Instalación 🔧
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_Los pasos a seguir para poder ejecutar el proyecto son:_
 
-### `npm run build`
+```
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_Luego ejecutar:_
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_Finalmente ingresar a:_
 
-### `npm run eject`
+```
+http://localhost:3000/
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Funcionamiento ⚙️
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Luego de ejecutar el proyecto, podremos ingresar al sitio web y ver las siguientes funcionalidades:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+Ver catálogo completo de productos.
+Filtrar productos por categorías.
+Visualizar productos en detalle.
+Gestionar stock de los items.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Construido con 🛠️
 
-## Learn More
+_Las herramientas utilizadas fueron:_
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [ReactJS](https://es.reactjs.org/) - Biblioteca Javascript
+- [Visual Studio Code](https://code.visualstudio.com/) - Editor de texto
+- [Bootstrap](https://getbootstrap.com/) - Biblioteca para diseño de sitios
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+_Las librerias utilizadas fueron:_
 
-### Code Splitting
+- [React-Bootstrap](https://react-bootstrap.github.io) - Permite aplicar Bootstrap en forma de componente React.
+- [@material-ui/icons](https://mui.com/es/components/material-icons/) - Se utilizó para implementar los iconos de MUI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Versionado 📌
 
-### Analyzing the Bundle Size
+Se utilizó [Github](https://github.com/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/matiasarw/ecommerce-react/commits/master).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Autor ✒️
 
-### Making a Progressive Web App
+- **Matias Ariel Wajnman** - [matiasarw](https://github.com/matiasarw)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto.

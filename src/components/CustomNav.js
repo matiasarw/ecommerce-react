@@ -1,6 +1,7 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import Dropdown from "react-bootstrap/Dropdown";
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 
@@ -25,16 +26,45 @@ const CustomNav = () => {
                   Home
                 </Link>
               </Item>
-              <Item>
-                <Link className="nav-link" to="/category/Notebook">
-                  Notebooks
-                </Link>
-              </Item>
-              <Item>
-                <Link className="nav-link" to="/category/Accesories">
-                  Accesorios PC
-                </Link>
-              </Item>
+
+              <Dropdown>
+                <Dropdown.Toggle
+                  variant="dark"
+                  bg="dark"
+                  expand="md"
+                  id="dropdown-basic"
+                >
+                  Categorías
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item as={Link} to="/category/Motherboard">
+                    Motherboard
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/category/Procesadores">
+                    Procesadores
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/category/Discos">
+                    Discos
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/category/Monitores">
+                    Monitores
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/category/Accesorios">
+                    Accesorios
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/category/Impresoras">
+                    Impresoras
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/category/Notebooks">
+                    Notebooks
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/category/Sillas">
+                    Sillas
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+
               <Item>
                 <Link className="nav-link" to="/nosotros">
                   Nosotros
