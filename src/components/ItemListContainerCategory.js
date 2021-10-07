@@ -1,21 +1,15 @@
 import ItemList from "./ItemList";
-import React from "react";
+import React, { useCallback } from "react";
 import { useState, useEffect } from "react";
 
 const ItemListContainerCategory = (props) => {
   const [items, setItems] = useState([]);
 
   const getItemsByCategoryID = (category, myJson) => {
-    let prod = [];
-    myJson.filter(function (element) {
-      if (element.category === category) {
-        prod.push(element);
-      }
-    });
-    return prod;
+    return myJson.filter((element) => element.category === category);
   };
 
-  const getData = () => {
+  const getData = useCallback(() => {
     fetch("../data.json", {
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +24,7 @@ const ItemListContainerCategory = (props) => {
         const productos = getItemsByCategoryID(category, myJson);
         setItems(productos);
       });
-  };
+  }, [props.match.params.id]);
 
   useEffect(() => {
     new Promise((resolve, reject) => {
@@ -39,7 +33,7 @@ const ItemListContainerCategory = (props) => {
         resolve("ok");
       }, 200);
     });
-  }, [props.match.params.id]);
+  }, [getData]);
 
   return (
     <>
