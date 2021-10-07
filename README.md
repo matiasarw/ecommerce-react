@@ -11,7 +11,6 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 _Para poder ejecutar en un entorno local, instalar previamente:_
 
 ```
-Windows 10 (recomendado)
 NodeJS
 ```
 
