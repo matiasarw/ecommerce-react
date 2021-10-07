@@ -18,12 +18,7 @@ NodeJS
 
 _Los pasos a seguir para poder ejecutar el proyecto son:_
 
-```
-Clonar el repositorio en un proyecto que contenga node_modules
-Dicha carpeta de dependencias no fue incluída debido a su tamaño
-```
-
-_Luego ejecutar:_
+_Ejecutar en el directorio del proyecto:_
 
 ```
 npm install
