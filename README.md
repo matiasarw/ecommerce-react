@@ -6,12 +6,13 @@ _MWTech es un sitio de comercio electrónico, desarrollado en ReactJS, destinado
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
+
 ### Pre-requisitos 📋
 
-_Para poder ejecutar en un entorno local, se recomienda tener:_
+_Para poder ejecutar en un entorno local, instalar previamente:_
 
 ```
-Windows 10
+Windows 10 (recomendado)
 NodeJS
 ```
 
@@ -46,18 +47,18 @@ Visualizar productos en detalle.
 Gestionar stock de los items.
 ```
 
+
 ## Construido con 🛠️
 
 _Las herramientas utilizadas fueron:_
 
-- [ReactJS](https://es.reactjs.org/) - Biblioteca Javascript
-- [Visual Studio Code](https://code.visualstudio.com/) - Editor de texto
-- [Bootstrap](https://getbootstrap.com/) - Biblioteca para diseño de sitios
+* [ReactJS](https://es.reactjs.org/) - Biblioteca Javascript
+* [Visual Studio Code](https://code.visualstudio.com/) - Editor de texto
+* [Bootstrap](https://getbootstrap.com/) - Biblioteca para diseño de sitios
 
 _Las librerias utilizadas fueron:_
-
-- [React-Bootstrap](https://react-bootstrap.github.io) - Permite aplicar Bootstrap en forma de componente React.
-- [@material-ui/icons](https://mui.com/es/components/material-icons/) - Se utilizó para implementar los iconos de MUI.
+* [React-Bootstrap](https://react-bootstrap.github.io) - Permite aplicar Bootstrap en forma de componente React.
+* [@material-ui/icons](https://mui.com/es/components/material-icons/) - Se utilizó para implementar los iconos de MUI.
 
 ## Versionado 📌
 
@@ -65,6 +66,4 @@ Se utilizó [Github](https://github.com/) para el versionado. Para todas las ver
 
 ## Autor ✒️
 
-- **Matias Ariel Wajnman** - [matiasarw](https://github.com/matiasarw)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto.
+* **Matias Ariel Wajnman** - [matiasarw](https://github.com/matiasarw)
