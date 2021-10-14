@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-/eventos
+
 .pnp.js
 
 # testing
