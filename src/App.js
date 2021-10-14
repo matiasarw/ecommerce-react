@@ -7,32 +7,40 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainerCategory from "./components/ItemListContainerCategory";
 import Home from "./components/Home";
 import Nosotros from "./components/Nosotros";
+import CartContext from "./CartContext";
+import CartContainer from "./components/CartContainer";
 
 const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        <Container fluid>
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={(props) => (
-                <ItemListContainer
-                  greeting="Catalogo de productos"
-                  {...props}
-                />
-              )}
-            />
-            <Route path="/home" component={Home} />
-            <Route path="/category/:id" component={ItemListContainerCategory} />
-            <Route path="/item/:id" component={ItemDetailContainer} />
-            <Route path="/nosotros" component={Nosotros} />
-          </Switch>
-          <Footer />
-        </Container>
-      </BrowserRouter>
+      <CartContext>
+        <BrowserRouter>
+          <Header />
+          <Container fluid>
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={(props) => (
+                  <ItemListContainer
+                    greeting="Catalogo de productos"
+                    {...props}
+                  />
+                )}
+              />
+              <Route path="/home" component={Home} />
+              <Route
+                path="/category/:id"
+                component={ItemListContainerCategory}
+              />
+              <Route path="/item/:id" component={ItemDetailContainer} />
+              <Route path="/nosotros" component={Nosotros} />
+              <Route path="/cart" component={CartContainer} />
+            </Switch>
+            <Footer />
+          </Container>
+        </BrowserRouter>
+      </CartContext>
     </>
   );
 };

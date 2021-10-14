@@ -26,7 +26,6 @@ const CustomNav = () => {
                   Home
                 </Link>
               </Item>
-
               <Dropdown>
                 <Dropdown.Toggle
                   variant="dark"
@@ -71,7 +70,7 @@ const CustomNav = () => {
                 </Link>
               </Item>
               <Item>
-                <Link className="nav-link" to="">
+                <Link className="nav-link" to="/cart">
                   <CartWidget />
                 </Link>
               </Item>

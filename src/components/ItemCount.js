@@ -1,74 +1,58 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
-const ItemCount = ({ stock }) => {
-  const [products, setProducts] = useState({
-    count: stock,
-  });
+const ItemCount = ({ stock, initial = 1, onAdd }) => {
+  const [count, setCount] = useState(initial);
 
-  const decrease = () => {
-    if (document.getElementById("cantidad").value) {
-      let countStock = parseInt(products.count);
-      let valorResta = parseInt(document.getElementById("cantidad").value);
-      if (products.count - valorResta <= 0) {
-        return;
-      } else {
-        setProducts({ count: countStock - valorResta });
-      }
+  const increment = () => {
+    if (count < stock) {
+      setCount(count + 1);
     }
   };
 
-  const increase = () => {
-    if (document.getElementById("cantidad").value) {
-      let countStock = parseInt(products.count);
-      let valorSuma = parseInt(document.getElementById("cantidad").value);
-      setProducts({ count: countStock + valorSuma });
+  const decrement = () => {
+    if (count > 1) {
+      setCount(count - 1);
     }
   };
 
+  const confirm = () => {
+    onAdd(count);
+  };
   return (
     <>
       <div>
-        <h6 style={{ display: "inline-block" }}>Stock disponible: </h6>
-        <h6 style={{ display: "inline-block" }}>{products.count}</h6>
-        <br />
         <button
           style={{ display: "inline-block" }}
-          type="buttonIncrease"
           className="btn btn-primary"
-          onClick={decrease}
+          onClick={decrement}
         >
           -
         </button>
         <div
-          className="form-group"
-          style={{ display: "inline-block", width: "17%" }}
+          style={{
+            display: "inline-block",
+            marginLeft: "25px",
+            marginRight: "25px",
+          }}
         >
-          <input
-            type="text"
-            className="form-control"
-            id="cantidad"
-            placeholder="Ingresar cantidad"
-          />
+          <label>{count}</label>
         </div>
         <button
           style={{ display: "inline-block" }}
-          type="buttonIncrease"
           className="btn btn-primary"
-          onClick={increase}
+          onClick={increment}
         >
           +
         </button>
       </div>
 
-      <Link
-        style={{ marginTop: "4%" }}
+      <button
+        style={{ marginTop: "30px" }}
         className="btn btn-primary"
-        to="#"
-        onClick={decrease}
+        onClick={confirm}
       >
-        Comprar
-      </Link>
+        Agregar al carrito
+      </button>
     </>
   );
 };

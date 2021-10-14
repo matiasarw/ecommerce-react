@@ -1,10 +1,22 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import ItemCount from "./ItemCount";
+import { useContext, useState } from "react";
+import { contexto } from "../CartContext";
+import { Link } from "react-router-dom";
 
 const { Body, Header, Img, Footer, Text, Title } = Card;
 
 const ItemDetail = ({ prod }) => {
+  const { agregarProducto } = useContext(contexto);
+  const [state, setState] = useState(0);
+
+  const onAdd = (cantidad) => {
+    const new_prod = { prod, cantidad: cantidad };
+    agregarProducto(new_prod);
+    setState(1);
+  };
+
   return (
     <main className="pt-3">
       <Card
@@ -27,7 +39,28 @@ const ItemDetail = ({ prod }) => {
           <Title>{prod.title}</Title>
           <Text>{prod.description}</Text>
           <Text>$ {prod.price}</Text>
-          <ItemCount stock={prod.stock} />
+          <Text>Stock: {prod.stock}</Text>
+          {(() => {
+            if (state === 1) {
+              return (
+                <>
+                  <Link className="btn btn-primary" to="/cart">
+                    Terminar mi compra
+                  </Link>
+                  <br />
+                  <Link
+                    style={{ marginTop: "2%" }}
+                    className="btn btn-primary"
+                    to="/"
+                  >
+                    Ver más productos
+                  </Link>
+                </>
+              );
+            } else {
+              return <ItemCount stock={prod.stock} onAdd={onAdd} />;
+            }
+          })()}
         </Body>
         <Footer className="text-muted">Consultar por costos de envío</Footer>
       </Card>

@@ -48,7 +48,7 @@
         "id": "000006",
         "title": "Monitores 27 Sentey",
         "description": "Monitores Gamer Sentey 27 165Hz VA 1Ms HDMI/DP, ideal para Gaming y Diseño.",
-        "price": "58.999",
+        "price": "58999",
         "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/37400_1.jpeg",
         "category": "Monitores",
         "stock": "32"
@@ -57,7 +57,7 @@
         "id": "000007",
         "title": "Procesador I7 11th Gen",
         "description": "Nuevo Lanzamiento de Intel. Ideal para computadores portátiles y equipos desktop de alta gama.",
-        "price": "51.829",
+        "price": "51829",
         "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/39541_3.jpeg",
         "category": "Procesadores",
         "stock": "12"
@@ -66,7 +66,7 @@
         "id": "000008",
         "title": "Notebooks Asus x515",
         "description": "Ligeras, resistentes y de altas prestaciones. Posee I5 10th Gen, 16GB Ram, Nvidia 940mx y 1TB SSD.",
-        "price": "113.500",
+        "price": "113500",
         "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/39467_5.jpeg",
         "category": "Notebooks",
         "stock": "3"
@@ -113,6 +113,7 @@
         "price": "83500",
         "description": "La impresora HP LaserJet M404DW le permite enfocar su tiempo donde sea más efectivo.",
         "pictureUrl": "https://mexx-img-2019.s3.amazonaws.com/36230_1.jpeg",
-        "category": "Impresoras"
+        "category": "Impresoras",
+        "stock": "9"
       }
 ]
