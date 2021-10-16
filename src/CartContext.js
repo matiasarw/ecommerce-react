@@ -61,7 +61,6 @@ const CartContext = ({ children }) => {
     agregarProducto,
     eliminarProducto,
     vaciarCarrito,
-    isInCarrito,
     getCant,
     getTotal,
   };
