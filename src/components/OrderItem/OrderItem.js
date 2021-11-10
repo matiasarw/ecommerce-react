@@ -13,7 +13,7 @@ const OrderItem = ({ item }) => {
         &nbsp; {item.date.toDate().getHours()}:{item.date.toDate().getMinutes()}
       </p>
       <p>
-        <b>Cantidad de productos:</b> {item.items.length}
+        <b>Cantidad de productos distintos:</b> {item.items.length}
       </p>
       <p>
         <b>Precio total:</b> $ {item.total}
