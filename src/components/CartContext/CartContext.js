@@ -1,17 +1,17 @@
-import { createContext , useState  , useContext } from 'react';
+import React from 'react';
+import { createContext, useState, useContext } from 'react';
 import firebase from 'firebase/app';
 import { firestore } from '../Firebase/Firebase';
 
-export const contexto = createContext()
+export const contexto = createContext();
 
-const {Provider} = contexto;
+const { Provider } = contexto;
 
 export const useCarrito = () => {
-    return useContext(contexto)
-}
+  return useContext(contexto);
+};
 
 const CartContext = ({ children }) => {
-
   const [carrito, setCarrito] = useState([]);
 
   const agregarProducto = (producto) => {
@@ -65,25 +65,26 @@ const CartContext = ({ children }) => {
   const updateCant = (new_array, producto) => {
     for (var i = 0; i < new_array.length; i++) {
       if (new_array[i].prod.id === producto.prod.id) {
-        new_array[i].cantidad + producto.cantidad > new_array[i].prod.stock ? new_array[i].cantidad = new_array[i].prod.stock : new_array[i].cantidad += producto.cantidad;
+        new_array[i].cantidad + producto.cantidad > new_array[i].prod.stock
+          ? (new_array[i].cantidad = new_array[i].prod.stock)
+          : (new_array[i].cantidad += producto.cantidad);
         setCarrito(new_array);
       }
     }
   };
 
   const newOrder = (customer, orderID) => {
-
     const orderToSave = {
       customer: customer,
-      items : carrito,
+      items: carrito,
       date: firebase.firestore.Timestamp.now(),
       total: getTotal(),
       order: orderID,
       estado: 'Generada',
-    }
-    firestore.collection('ordenes').add(orderToSave).then(vaciarCarrito())
-  }
-  
+    };
+    firestore.collection('ordenes').add(orderToSave).then(vaciarCarrito());
+  };
+
   const valor_del_contexto = {
     carrito,
     agregarProducto,
@@ -94,9 +95,7 @@ const CartContext = ({ children }) => {
     newOrder,
   };
 
-  return (
-    <Provider value={valor_del_contexto}>{children}</Provider>
-  );
+  return <Provider value={valor_del_contexto}>{children}</Provider>;
 };
 
 export default CartContext;

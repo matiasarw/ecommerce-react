@@ -1,7 +1,6 @@
-import { css } from "@emotion/react";
-import {BarLoader} from "react-spinners";
-
-
+import React from 'react';
+import { css } from '@emotion/react';
+import { BarLoader } from 'react-spinners';
 
 const override = css`
   display: block;
@@ -9,9 +8,7 @@ const override = css`
 `;
 
 const Loading = () => {
-    return(
-        <BarLoader css={override} />
-    )
-}
+  return <BarLoader css={override} />;
+};
 
-export default Loading
+export default Loading;

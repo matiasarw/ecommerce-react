@@ -47,6 +47,7 @@ Visualizar productos en detalle.
 Gestionar stock de los items.
 Checkout de productos.
 ```
+
 ![Gif Funcionamiento](https://github.com/matiasarw/ecommerce-react/blob/entregas_react/gif-funcionamiento.gif)
 
 ## Construido con 🛠️
@@ -67,6 +68,8 @@ _Las librerias utilizadas fueron:_
 - [@material-ui](https://mui.com/es/components/material-icons/) - Se utiliza para implementar los iconos de MUI.
 - [@mui/material/Badge](https://mui.com/components/badges/) - Se utiliza para implementar el contador en el widget de Cart.
 - [randomstring](https://www.npmjs.com/package/randomstring) - Se utiliza para generar los order ID de forma aleatoria.
+- [eslint](https://eslint.org/) - Se utiliza para identificar patrones problemáticos en el código.
+- [prettier](https://prettier.io) - Se utiliza para formatear el código y dejarlo consistente de manera automática.
 
 ## Versionado 📌
 

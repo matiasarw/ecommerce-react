@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const ItemCount = ({ stock, initial = 1, onAdd }) => {
-  
   const [count, setCount] = useState(initial);
 
   const increment = () => {
@@ -23,36 +22,24 @@ const ItemCount = ({ stock, initial = 1, onAdd }) => {
   return (
     <>
       <div>
-        <button
-          style={{ display: "inline-block" }}
-          className="btn btn-primary"
-          onClick={decrement}
-        >
+        <button style={{ display: 'inline-block' }} className="btn btn-primary" onClick={decrement}>
           -
         </button>
         <div
           style={{
-            display: "inline-block",
-            marginLeft: "25px",
-            marginRight: "25px",
+            display: 'inline-block',
+            marginLeft: '25px',
+            marginRight: '25px',
           }}
         >
           <label>{count}</label>
         </div>
-        <button
-          style={{ display: "inline-block" }}
-          className="btn btn-primary"
-          onClick={increment}
-        >
+        <button style={{ display: 'inline-block' }} className="btn btn-primary" onClick={increment}>
           +
         </button>
       </div>
 
-      <button
-        style={{ marginTop: "30px" }}
-        className="btn btn-primary"
-        onClick={confirm}
-      >
+      <button style={{ marginTop: '30px' }} className="btn btn-primary" onClick={confirm}>
         Agregar al carrito
       </button>
     </>
