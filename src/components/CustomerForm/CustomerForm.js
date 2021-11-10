@@ -116,7 +116,6 @@ const CustomerForm = ({ newOrder }) => {
               {...register('email', {
                 required: '* El email no puede estar en blanco',
                 maxLength: { value: 50, message: 'Email muy largo (máx 50 carácteres)' },
-                // eslint-disable-next-line
                 pattern: {
                   value:
                     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, // eslint-disable-line
