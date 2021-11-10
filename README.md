@@ -47,7 +47,7 @@ Visualizar productos en detalle.
 Gestionar stock de los items.
 Checkout de productos.
 ```
-![Gif Funcionamiento](https://mwtech.s3.us-east-2.amazonaws.com/mwtech-optimized.gif)
+![Gif Funcionamiento](https://github.com/matiasarw/ecommerce-react/blob/entregas_react/gif-funcionamiento.gif)
 
 ## Construido con 🛠️
 
