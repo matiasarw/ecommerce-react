@@ -1,8 +1,9 @@
+import React from 'react'
 
 const Footer = () => {
     return (
         <footer>
-            <p style={{paddingTop:'6%'}}>&copy; Copyright 2021 - Matias W.</p>
+            <p className='text-footer'>&copy; Copyright 2021 - MWTech.</p>
         </footer>
     );
 }

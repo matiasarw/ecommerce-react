@@ -38,31 +38,39 @@ http://localhost:3000/
 
 ### Funcionamiento ⚙️
 
-Luego de ejecutar el proyecto, podremos ingresar al sitio web y ver las siguientes funcionalidades:
+Luego de ejecutar el proyecto, podremos ingresar al sitio web y realizar las siguientes funcionalidades:
 
 ```
 Ver catálogo completo de productos.
 Filtrar productos por categorías.
 Visualizar productos en detalle.
 Gestionar stock de los items.
+Checkout de productos.
 ```
+![Gif Funcionamiento](https://mwtech.s3.us-east-2.amazonaws.com/mwtech-optimized.gif)
 
 ## Construido con 🛠️
 
-_Las herramientas utilizadas fueron:_
+_Las herramientas y bibliotecas utilizadas fueron:_
 
 - [ReactJS](https://es.reactjs.org/) - Biblioteca Javascript
 - [Visual Studio Code](https://code.visualstudio.com/) - Editor de texto
 - [Bootstrap](https://getbootstrap.com/) - Biblioteca para diseño de sitios
+- [Firebase](https://firebase.google.com/) - Se utiliza el servicio de Firestore Database para guardar los datos del sitio, como productos y órdenes.
 
 _Las librerias utilizadas fueron:_
 
 - [React-Bootstrap](https://react-bootstrap.github.io) - Permite aplicar Bootstrap en forma de componente React.
-- [@material-ui/icons](https://mui.com/es/components/material-icons/) - Se utilizó para implementar los iconos de MUI.
+- [React-Router-Dom](https://v5.reactrouter.com) - Permite el diseño de Links y Rutas dentro del proyecto.
+- [React-Spinner](https://www.npmjs.com/package/react-spinners) - Permite el diseño del componente Loading.
+- [React-Hook-Form](https://react-hook-form.com/) - Permite el diseño del formulario y su posterior validación de campos.
+- [@material-ui](https://mui.com/es/components/material-icons/) - Se utiliza para implementar los iconos de MUI.
+- [@mui/material/Badge](https://mui.com/components/badges/) - Se utiliza para implementar el contador en el widget de Cart.
+- [randomstring](https://www.npmjs.com/package/randomstring) - Se utiliza para generar los order ID de forma aleatoria.
 
 ## Versionado 📌
 
-Se utilizó [Github](https://github.com/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/matiasarw/ecommerce-react/commits/master).
+Se utilizó [Github](https://github.com/) para el versionado. Para todas las versiones disponibles, mirar los [tags en este repositorio](https://github.com/matiasarw/ecommerce-react/commits/master).
 
 ## Autor ✒️
 

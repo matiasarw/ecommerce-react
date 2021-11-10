@@ -1,20 +1,18 @@
-import ItemList from "./ItemList";
+import ItemList from "../ItemList/ItemList";
 import React from "react";
 import { useState, useEffect } from "react";
-import {firestore} from "./Firebase"
+import {firestore} from "../Firebase/Firebase"
 import { useParams } from "react-router-dom";
-import Loading from './Loading'
+import Loading from '../Loading/Loading'
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const [category, setCategory] = useState(null);
   let { id } = useParams();
 
 
   const getProds = (path) => {
-    const db = firestore
-    const collection = db.collection("productos")
-    const query = path === "home" ? collection.get() : collection.where("category", "==", path).get();
+    const query = path === "home" ? firestore.collection("productos").get() : firestore.collection("productos").where("category", "==", path).get();
     query
     .then((resultado)=>{
       const documentos = resultado.docs
@@ -27,27 +25,19 @@ const ItemListContainer = (props) => {
       })
       setItems(array_final_de_productos)
     })
-    .catch(error=>{
-      console.log(error)
-    })
   }
 
   useEffect(() => {
-
+    
     const path = id ? id : "home"
-
-    new Promise((resolve,reject) => {
-      setTimeout(()=>{
-        getProds(path)
-        setCategory(id)
-      },500)
-    })
+    getProds(path)
+    setCategory(id)
 
   }, [id]);
 
   return (
     <>
-      <h2 style={{ marginTop: "2%" }}>{props.greeting} </h2>
+      <h2 style={{ marginTop: "2%" }}>Catalogo de productos</h2>
       {(() => {
         if (items.length > 0) {
           return (

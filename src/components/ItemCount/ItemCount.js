@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const ItemCount = ({ stock, initial = 1, onAdd }) => {
+  
   const [count, setCount] = useState(initial);
 
   const increment = () => {
@@ -18,6 +19,7 @@ const ItemCount = ({ stock, initial = 1, onAdd }) => {
   const confirm = () => {
     onAdd(count);
   };
+
   return (
     <>
       <div>
