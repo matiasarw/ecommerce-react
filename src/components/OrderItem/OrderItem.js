@@ -4,7 +4,7 @@ const OrderItem = ({ item }) => {
   return (
     <div>
       <p>
-        <b>Orden ID2:</b> {item.order}
+        <b>Orden ID:</b> {item.order}
       </p>
       <p>
         <b>Fecha de compra: </b>
