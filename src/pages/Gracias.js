@@ -2,7 +2,6 @@ import React from 'react';
 import Error from './Error';
 
 const Gracias = (props) => {
-  props.location.state ? console.log('si') : console.log('no');
   return (
     <>
       {props.location.state ? (

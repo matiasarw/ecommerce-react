@@ -38,7 +38,6 @@ const ItemCount = ({ stock, initial = 1, onAdd }) => {
           +
         </button>
       </div>
-
       <button style={{ marginTop: '30px' }} className="btn btn-primary" onClick={confirm}>
         Agregar al carrito
       </button>

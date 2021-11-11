@@ -37,27 +37,17 @@ const ItemListContainer = () => {
   return (
     <>
       <h2 style={{ marginTop: '2%' }}>Catalogo de productos</h2>
-      {(() => {
-        if (items.length > 0) {
-          return (
-            <>
-              {(() => {
-                if (category) {
-                  return <p>{category}</p>;
-                }
-              })()}
-              <ItemList productos={items} />
-            </>
-          );
-        } else {
-          return (
-            <>
-              <p>Cargando productos, espere por favor...</p>
-              <Loading />
-            </>
-          );
-        }
-      })()}
+      {items.length > 0 ? (
+        <>
+          {category && <p>{category}</p>}
+          <ItemList productos={items} />
+        </>
+      ) : (
+        <>
+          <p>Cargando productos, espere por favor...</p>
+          <Loading />
+        </>
+      )}
     </>
   );
 };

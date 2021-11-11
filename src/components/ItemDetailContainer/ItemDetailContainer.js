@@ -25,20 +25,16 @@ const ItemDetailContainer = () => {
   }, [id, getProd]);
 
   return (
-    <div>
-      {(() => {
-        if (item) {
-          return <ItemDetail prod={item} />;
-        } else {
-          return (
-            <>
-              <p>Cargando producto, espere por favor...</p>
-              <Loading />
-            </>
-          );
-        }
-      })()}
-    </div>
+    <>
+      {item ? (
+        <ItemDetail prod={item} />
+      ) : (
+        <>
+          <p>Cargando producto, espere por favor...</p>
+          <Loading />
+        </>
+      )}
+    </>
   );
 };
 

@@ -40,7 +40,7 @@ const Orden = () => {
             className="form-control form-group"
             placeholder="Orden ID"
             {...register('order_id', {
-              required: '* Identificar no puede ser nulo.',
+              required: '* Identificador de orden no puede ser nulo.',
               maxLength: { value: 10, message: 'El identificador de orden tiene 10 digitos.' },
               minLength: { value: 10, message: 'El identificador de orden tiene 10 digitos.' },
             })}

@@ -44,31 +44,27 @@ const ItemDetail = ({ prod }) => {
                   <Text>{prod.description}</Text>
                   <Text>$ {prod.price}</Text>
                   <Text>Stock: {prod.stock}</Text>
-                  {(() => {
-                    if (state) {
-                      return (
-                        <>
-                          <Link
-                            className="btn btn-primary"
-                            style={{ width: '18%', opacity: '0.6' }}
-                            to="/cart"
-                          >
-                            Terminar mi compra
-                          </Link>
-                          <br />
-                          <Link
-                            style={{ marginTop: '2%', width: '18%' }}
-                            className="btn btn-primary"
-                            to="/home"
-                          >
-                            Ver más productos
-                          </Link>
-                        </>
-                      );
-                    } else {
-                      return <ItemCount stock={prod.stock} onAdd={onAdd} />;
-                    }
-                  })()}
+                  {state ? (
+                    <>
+                      <Link
+                        className="btn btn-primary"
+                        style={{ width: '18%', opacity: '0.6' }}
+                        to="/cart"
+                      >
+                        Terminar mi compra
+                      </Link>
+                      <br />
+                      <Link
+                        style={{ marginTop: '2%', width: '18%' }}
+                        className="btn btn-primary"
+                        to="/home"
+                      >
+                        Ver más productos
+                      </Link>
+                    </>
+                  ) : (
+                    <ItemCount stock={prod.stock} onAdd={onAdd} />
+                  )}
                 </Body>
                 <Footer className="text-muted">Consultar por costos de envío</Footer>
               </Card>
