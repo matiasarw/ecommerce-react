@@ -51,7 +51,7 @@ Checkout de productos.
 ![Gif Funcionamiento](https://github.com/matiasarw/ecommerce-react/blob/entregas_react/gif-funcionamiento.gif)
 
 El proyecto se encuentra hosteado en Netlify y linkeado con GitHub para un despliegue continuo:
-- [MWTech](https://elegant-beaver-503787.netlify.app)
+- [MWTech](mwtech.com.ar)
 
 ## Construido con 🛠️
 
