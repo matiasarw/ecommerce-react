@@ -50,6 +50,9 @@ Checkout de productos.
 
 ![Gif Funcionamiento](https://github.com/matiasarw/ecommerce-react/blob/entregas_react/gif-funcionamiento.gif)
 
+El proyecto se encuentra hosteado en Netlify y linkeado con GitHub para un despliegue continuo:
+- [MWTech](https://elegant-beaver-503787.netlify.app)
+
 ## Construido con 🛠️
 
 _Las herramientas y bibliotecas utilizadas fueron:_
@@ -58,6 +61,7 @@ _Las herramientas y bibliotecas utilizadas fueron:_
 - [Visual Studio Code](https://code.visualstudio.com/) - Editor de texto
 - [Bootstrap](https://getbootstrap.com/) - Biblioteca para diseño de sitios
 - [Firebase](https://firebase.google.com/) - Se utiliza el servicio de Firestore Database para guardar los datos del sitio, como productos y órdenes.
+- [Netlify](https://www.netlify.com/) - Se utiliza el servicio de hosting.
 
 _Las librerias utilizadas fueron:_
 
