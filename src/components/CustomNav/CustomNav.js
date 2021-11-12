@@ -38,7 +38,13 @@ const CustomNav = () => {
               </Link>
             </Item>
             <Dropdown>
-              <Dropdown.Toggle variant="dark" bg="dark" expand="md" id="dropdown-basic">
+              <Dropdown.Toggle
+                variant="dark"
+                bg="dark"
+                expand="md"
+                id="dropdown-basic"
+                style={{ color: 'rgba(255,255,255,.55)' }}
+              >
                 Categorias
               </Dropdown.Toggle>
 

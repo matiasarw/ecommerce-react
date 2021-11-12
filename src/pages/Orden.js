@@ -32,7 +32,7 @@ const Orden = () => {
 
   return (
     <div className="form-group" style={{ display: 'flex', justifyContent: 'center' }}>
-      <div style={{ marginTop: '8%', width: '500px' }}>
+      <div style={{ marginTop: '8%', width: '500px', marginBottom: '2%' }}>
         <form onSubmit={handleSubmit(handleClick)} className="form-custom">
           <h4 style={{ marginBottom: '10%', textAlign: 'center' }}>Estado de Orden</h4>
           <input

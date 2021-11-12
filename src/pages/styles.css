@@ -33,11 +33,15 @@ body {
 }
 
 .text-footer {
-  padding: 3%;
   text-align: center;
 }
 
 .font-cart {
   font-weight: bold;
   color: #0d6efd;
+}
+
+.footer-custom {
+  height: 5vh;
+  margin-top: 2%;
 }

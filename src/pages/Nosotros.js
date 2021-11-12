@@ -17,6 +17,7 @@ const Home = () => {
               src="https://mwtech.s3.us-east-2.amazonaws.com/circle%2Bdropped-modified.png"
               alt="about"
               className="img-fluid"
+              style={{ height: '60vh' }}
             />
           </div>
         </div>
