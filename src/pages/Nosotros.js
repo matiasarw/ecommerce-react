@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="bg-light">
+    <div style={{ backgroundColor: 'white !important' }}>
       <div className="container py-5">
         <div className="row h-100 align-items-center py-5">
           <div className="col-lg-6">
