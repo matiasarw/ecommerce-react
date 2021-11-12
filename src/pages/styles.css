@@ -25,13 +25,6 @@ body {
   transform: translate(0, -50%);
 }
 
-.container-fluid {
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .text-footer {
   text-align: center;
 }
