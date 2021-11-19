@@ -22,23 +22,17 @@ const ItemCount = ({ stock, initial = 1, onAdd }) => {
   return (
     <>
       <div>
-        <button style={{ display: 'inline-block' }} className="btn btn-primary" onClick={decrement}>
+        <button className="btn btn-primary" onClick={decrement}>
           -
         </button>
-        <div
-          style={{
-            display: 'inline-block',
-            marginLeft: '25px',
-            marginRight: '25px',
-          }}
-        >
+        <div className="div-inline">
           <label>{count}</label>
         </div>
-        <button style={{ display: 'inline-block' }} className="btn btn-primary" onClick={increment}>
+        <button className="btn btn-primary" onClick={increment}>
           +
         </button>
       </div>
-      <button style={{ marginTop: '30px' }} className="btn btn-primary" onClick={confirm}>
+      <button className="btn btn-primary bt-top-30" onClick={confirm}>
         Agregar al carrito
       </button>
     </>

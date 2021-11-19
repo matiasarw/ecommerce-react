@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../pages/styles.css';
 
 const ItemCart = ({ prod, cant, eliminarProd }) => {
   const eliminar = () => {
@@ -8,7 +9,7 @@ const ItemCart = ({ prod, cant, eliminarProd }) => {
   return (
     <div className="productos">
       <img src={prod.pictureUrl} className="prod-ind" alt="foto" />
-      <div className="item" style={{ width: '87%', display: 'inline-block' }}>
+      <div className="item item-cart-width">
         <div className="detalles">
           <span className="price">$ {prod.price}</span>
           <p className="item-name">{prod.title}</p>

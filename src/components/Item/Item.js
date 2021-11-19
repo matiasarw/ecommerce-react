@@ -7,20 +7,14 @@ const { Body, Img, Footer, Text, Title } = Card;
 const Item = ({ id, title, description, price, pictureUrl }) => {
   return (
     <Card className="text-center">
-      <Img
-        style={{
-          width: '50%',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: '2%',
-        }}
-        src={pictureUrl}
-      />
+      <Img className="item-ind" src={pictureUrl} />
       <Body>
         <Title>{title}</Title>
-        <Text style={{ fontSize: 'small' }}>{description}</Text>
-        <Text style={{ fontSize: 'xx-small' }}>Código: {id}</Text>
-        <Text>${price}</Text>
+        <Text className="item-text-sm">{description}</Text>
+        <Text className="item-text-xx-sm">Código: {id}</Text>
+        <Text>
+          <b>${price}</b>
+        </Text>
       </Body>
       <Footer>
         <Link className="btn btn-primary" to={'/item/' + id}>

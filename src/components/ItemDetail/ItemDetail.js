@@ -24,26 +24,15 @@ const ItemDetail = ({ prod }) => {
         if (prod.title) {
           return (
             <main className="pt-3">
-              <Card
-                style={{ width: '50%', marginLeft: 'auto', marginRight: 'auto' }}
-                className="text-center"
-              >
-                <Header style={{ fontSize: 'small' }} className="text-muted">
-                  Código: {prod.id}
-                </Header>
-                <Img
-                  style={{
-                    width: '30%',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginTop: '15px',
-                  }}
-                  src={prod.pictureUrl}
-                />
+              <Card className="text-center card-detail">
+                <Header className="text-muted item-text-sm">Código: {prod.id}</Header>
+                <Img className="img-detail" src={prod.pictureUrl} />
                 <Body>
                   <Title>{prod.title}</Title>
                   <Text>{prod.description}</Text>
-                  <Text>$ {prod.price}</Text>
+                  <Text>
+                    <b>$ {prod.price}</b>
+                  </Text>
                   <Text>Stock: {prod.stock}</Text>
                   {state ? (
                     <>

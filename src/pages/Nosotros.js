@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div style={{ backgroundColor: 'white !important' }}>
+    <div className="div-bc-white">
       <div className="container py-5">
         <div className="row h-100 align-items-center py-5">
           <div className="col-lg-6">
@@ -16,8 +16,7 @@ const Home = () => {
             <img
               src="https://mwtech.s3.us-east-2.amazonaws.com/circle%2Bdropped-modified.png"
               alt="about"
-              className="img-fluid"
-              style={{ height: '60vh' }}
+              className="img-fluid img-height-60"
             />
           </div>
         </div>

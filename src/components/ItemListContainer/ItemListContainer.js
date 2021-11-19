@@ -36,7 +36,7 @@ const ItemListContainer = () => {
 
   return (
     <>
-      <h2 style={{ marginTop: '2%' }}>Catalogo de productos</h2>
+      <h2 className="h2-top-2">Catalogo de productos</h2>
       {items.length > 0 ? (
         <>
           {category && <p>{category}</p>}

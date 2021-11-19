@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../../pages/styles.css';
 
 const EmptyCart = () => {
   return (
@@ -7,10 +8,8 @@ const EmptyCart = () => {
       <div className="container py-5">
         <div className="row h-100 align-items-center py-5">
           <div className="col-lg-6">
-            <h2 className="display-4" style={{ color: 'red', fontSize: '2.5em' }}>
-              Oops! Tu carrito está vacio!
-            </h2>
-            <h3 className="display-4" style={{ fontSize: '1.7em' }}>
+            <h2 className="display-4 h2-empty">Oops! Tu carrito está vacio!</h2>
+            <h3 className="display-4 h2-empty-size">
               Hemos visto que no agregaste nada a tu carrito todavía...
             </h3>
             <Link className="btn btn-primary" to={'/home'}>

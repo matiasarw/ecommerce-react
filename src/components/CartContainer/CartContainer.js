@@ -3,6 +3,7 @@ import { useCarrito } from '../CartContext/CartContext';
 import ItemCart from '../ItemCart/ItemCart';
 import EmptyCart from '../EmptyCart/EmptyCart';
 import CustomerForm from '../CustomerForm/CustomerForm';
+import '../../pages/styles.css';
 
 const CartContainer = () => {
   const { carrito, vaciarCarrito, eliminarProducto, getTotal, newOrder } = useCarrito();
@@ -20,13 +21,11 @@ const CartContainer = () => {
               <section className="payment-form dark">
                 <div className="container">
                   <div className="block-heading">
-                    <h2 style={{ fontWeight: 'bold', color: '#0d6efd' }}>Carrito de compras</h2>
+                    <h2 className="cart-title">Carrito de compras</h2>
                     <p>Bienvenido al carrito de compras de MWTech.</p>
                   </div>
                   <div className="products">
-                    <h3 className="title" style={{ color: '#0d6efd' }}>
-                      Checkout
-                    </h3>
+                    <h3 className="title h3-blue">Checkout</h3>
                     {carrito.map((producto, index) => (
                       <ItemCart
                         prod={producto.prod}

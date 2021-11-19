@@ -31,13 +31,12 @@ const Orden = () => {
   }
 
   return (
-    <div className="form-group" style={{ display: 'flex', justifyContent: 'center' }}>
-      <div style={{ marginTop: '8%', width: '500px', marginBottom: '2%' }}>
+    <div className="form-group orden-center">
+      <div className="container-center-div">
         <form onSubmit={handleSubmit(handleClick)} className="form-custom">
-          <h4 style={{ marginBottom: '10%', textAlign: 'center' }}>Estado de Orden</h4>
+          <h4 className="h4-center-18">Estado de Orden</h4>
           <input
-            style={{ marginBottom: '10%' }}
-            className="form-control form-group"
+            className="form-control form-group mb-10"
             placeholder="Orden ID"
             {...register('order_id', {
               required: '* Identificador de orden no puede ser nulo.',
@@ -46,11 +45,7 @@ const Orden = () => {
             })}
           />
           {errors.order_id && <p className="error">{errors.order_id.message}</p>}
-          <button
-            style={{ marginBottom: '10%' }}
-            type="submit"
-            className="btn btn-primary btn-block"
-          >
+          <button type="submit" className="btn btn-primary btn-block mb-10">
             BUSCAR
           </button>
         </form>
