@@ -4,6 +4,7 @@ import ItemCount from '../ItemCount/ItemCount';
 import { useCarrito } from '../CartContext/CartContext';
 import { Link } from 'react-router-dom';
 import Error from '../../pages/Error';
+import '../../pages/styles.css';
 
 const { Body, Header, Img, Footer, Text, Title } = Card;
 
@@ -46,19 +47,11 @@ const ItemDetail = ({ prod }) => {
                   <Text>Stock: {prod.stock}</Text>
                   {state ? (
                     <>
-                      <Link
-                        className="btn btn-primary"
-                        style={{ width: 'auto', opacity: '0.6' }}
-                        to="/cart"
-                      >
+                      <Link className="btn btn-primary button-custom-1" to="/cart">
                         Terminar mi compra
                       </Link>
                       <br />
-                      <Link
-                        style={{ marginTop: '2%', width: 'auto' }}
-                        className="btn btn-primary"
-                        to="/home"
-                      >
+                      <Link className="btn btn-primary button-custom-2" to="/home">
                         Ver más productos
                       </Link>
                     </>

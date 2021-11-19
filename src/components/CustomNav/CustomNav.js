@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Dropdown from 'react-bootstrap/Dropdown';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
+import '../../pages/styles.css';
 
 const { Brand, Collapse, Toggle } = Navbar;
 const { Item } = Nav;
@@ -43,7 +44,8 @@ const CustomNav = () => {
                 bg="dark"
                 expand="md"
                 id="dropdown-basic"
-                style={{ color: 'rgba(255,255,255,.55)' }}
+                className="categorias"
+                // style={{ color: 'rgba(255,255,255,.55)', fontSize: '1.6rem' }}
               >
                 Categorias
               </Dropdown.Toggle>
