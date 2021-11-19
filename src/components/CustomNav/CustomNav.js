@@ -45,7 +45,6 @@ const CustomNav = () => {
                 expand="md"
                 id="dropdown-basic"
                 className="categorias"
-                // style={{ color: 'rgba(255,255,255,.55)', fontSize: '1.6rem' }}
               >
                 Categorias
               </Dropdown.Toggle>
