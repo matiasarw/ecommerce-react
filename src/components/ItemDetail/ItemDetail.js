@@ -48,14 +48,14 @@ const ItemDetail = ({ prod }) => {
                     <>
                       <Link
                         className="btn btn-primary"
-                        style={{ width: '18%', opacity: '0.6' }}
+                        style={{ width: 'auto', opacity: '0.6' }}
                         to="/cart"
                       >
                         Terminar mi compra
                       </Link>
                       <br />
                       <Link
-                        style={{ marginTop: '2%', width: '18%' }}
+                        style={{ marginTop: '2%', width: 'auto' }}
                         className="btn btn-primary"
                         to="/home"
                       >
