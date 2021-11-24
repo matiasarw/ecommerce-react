@@ -21,9 +21,8 @@ const App = () => {
           <CustomNav />
           <Container fluid>
             <Switch>
-              <Route exact path="/" component={ItemListContainer} />
+              <Route exact path="/" component={Main} />
               <Route path="/home" component={ItemListContainer} />
-              <Route path="/welcome" component={Main} />
               <Route path="/ordenes" component={Orden} />
               <Route path="/category/:id" component={ItemListContainer} />
               <Route path="/item/:id" component={ItemDetailContainer} />

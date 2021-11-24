@@ -34,7 +34,7 @@ const CustomNav = () => {
         <Collapse>
           <Nav>
             <Item>
-              <Link className="nav-link" to="/welcome">
+              <Link className="nav-link" to="/">
                 Inicio
               </Link>
             </Item>
